@@ -1,149 +1,117 @@
 ---
+const whatsappNumber = "966577618309";
 ---
-
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>كافنتر | أتمتة ذكية لأعمالك المحلية</title>
-  <meta name="description" content="نساعد أصحاب الأعمال الصغيرة في الرياض على الظهور أقوى على جوجل، والرد على العملاء أسرع، وحجز المواعيد أوتوماتيكياً." />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    header {
-      padding: 20px 0;
-      border-bottom: 1px solid #1e293b;
-    }
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      color: #38bdf8;
-    }
-    .hero {
-      padding: 80px 0;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #94a3b8;
-      max-width: 650px;
-      margin: 0 auto 30px;
-    }
-    .btn {
-      display: inline-block;
-      background: #38bdf8;
-      color: #0f172a;
-      padding: 14px 32px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.1rem;
-    }
-    .btn:hover {
-      background: #7dd3fc;
-    }
-    .services {
-      padding: 60px 0;
-      background: #1e293b;
-    }
-    .services h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 40px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-    .card {
-      background: #0f172a;
-      padding: 28px;
-      border-radius: 12px;
-      border: 1px solid #334155;
-    }
-    .card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 12px;
-      color: #38bdf8;
-    }
-    .card p {
-      color: #94a3b8;
-      font-size: 0.95rem;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-  </style>
+  <title>Kaventer — أتمتة ذكية لأعمالك المحلية</title>
 </head>
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">كافنتر</div>
-    </div>
-  </header>
+<body style="font-family: 'Segoe UI', Tahoma, sans-serif; margin:0; padding:0; background:#f8f9fa; color:#1a1a1a;">
 
-  <section class="hero">
-    <div class="container">
-      <h1>أتمتة ذكية لأعمالك المحلية</h1>
-      <p>
-        نساعد أصحاب الأعمال الصغيرة في الرياض (كار واش، عيادات، كافيهات) يظهروا أقوى على جوجل، يردوا على عملائهم أسرع، ويحجزوا مواعيد أوتوماتيك.
-      </p>
-      <a href="https://wa.me/966577618309" class="btn" target="_blank">احجز استشارة مجانية</a>
+  <!-- Navigation -->
+  <nav style="position:sticky; top:0; background:white; padding:15px 20px; box-shadow:0 2px 8px rgba(0,0,0,0.06); display:flex; justify-content:space-between; align-items:center; z-index:100;">
+    <strong style="color:#1e3a8a; font-size:1.2rem;">كافِنتر</strong>
+    <div style="display:flex; gap:20px; font-size:0.95rem;">
+      <a href="#services" style="color:#333; text-decoration:none;">خدماتنا</a>
+      <a href="/blog" style="color:#333; text-decoration:none;">المدونة</a>
+      <a href="#about" style="color:#333; text-decoration:none;">من نحن</a>
+      <a href="#contact" style="color:#1e3a8a; text-decoration:none; font-weight:bold;">تواصل معنا</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section style="text-align:center; padding:80px 20px; background:linear-gradient(135deg,#1e3a8a,#2563eb); color:white;">
+    <h1 style="font-size:2.5rem; margin-bottom:10px;">كافِنتر — أتمتة ذكية لأعمالك المحلية</h1>
+    <p style="font-size:1.2rem; max-width:600px; margin:0 auto 30px;">
+      نساعد أصحاب الأعمال الصغيرة في الرياض (كار واش، عيادات، كافيهات) يظهروا أقوى على جوجل، يردوا على عملائهم أسرع، ويحجزوا مواعيد أوتوماتيك.
+    </p>
+    <a href={`https://wa.me/${whatsappNumber}`} style="background:white; color:#1e3a8a; padding:12px 30px; border-radius:8px; text-decoration:none; font-weight:bold;">احجز استشارة مجانية</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" style="padding:60px 20px; max-width:1000px; margin:0 auto;">
+    <h2 style="text-align:center; margin-bottom:40px;">خدماتنا</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;">
+
+      <div style="background:white; padding:25px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3 style="margin-top:12px;">خرائط جوجل</h3>
+        <p>تحسين ظهورك على خرائط جوجل عشان عملاؤك يلقوك بسهولة</p>
+      </div>
+
+      <div style="background:white; padding:25px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <h3 style="margin-top:12px;">SEO محلي</h3>
+        <p>ترتيب أعلى في نتائج البحث المحلية بالرياض</p>
+      </div>
+
+      <div style="background:white; padding:25px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <h3 style="margin-top:12px;">أتمتة واتساب</h3>
+        <p>ردود تلقائية فورية على استفسارات عملائك</p>
+      </div>
+
+      <div style="background:white; padding:25px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <h3 style="margin-top:12px;">زر الحجز</h3>
+        <p>نظام حجز مواعيد مدمج بدون تدخل يدوي</p>
+      </div>
+
     </div>
   </section>
 
-  <section class="services">
-    <div class="container">
-      <h2>خدماتنا</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>خرائط جوجل</h3>
-          <p>تحسين ظهورك على خرائط جوجل عشان عملاؤك يلقوك بسهولة.</p>
-        </div>
-        <div class="card">
-          <h3>SEO محلي</h3>
-          <p>ترتيب أعلى في نتائج البحث المحلية بالرياض.</p>
-        </div>
-        <div class="card">
-          <h3>أتمتة واتساب</h3>
-          <p>ردود تلقائية فورية على استفسارات عملائك.</p>
-        </div>
-        <div class="card">
-          <h3>زر الحجز</h3>
-          <p>نظام حجز مواعيد مدمج بدون تدخل يدوي.</p>
-        </div>
+  <!-- Who We Serve -->
+  <section style="padding:60px 20px; text-align:center; background:#eef2ff;">
+    <h2 style="margin-bottom:30px;">لمن هذه الخدمة؟</h2>
+    <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2"><path d="M5 17h14l-1.5-5H6.5L5 17z"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/><path d="M6 12l1-6h10l1 6"/></svg>
+        <p style="margin-top:8px;">كار واش</p>
+      </div>
+      <div style="text-align:center;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3H5v12h14V10h-2V7a5 5 0 0 0-5-5z"/></svg>
+        <p style="margin-top:8px;">عيادات</p>
+      </div>
+      <div style="text-align:center;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        <p style="margin-top:8px;">كافيهات</p>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      © 2026 كافنتر — جميع الحقوق محفوظة
-    </div>
+  <!-- About Us -->
+  <section id="about" style="padding:60px 20px; max-width:700px; margin:0 auto; text-align:center;">
+    <h2>من نحن</h2>
+    <p style="color:#555; line-height:1.8;">
+      كافِنتر وكالة سعودية متخصصة في أتمتة الأعمال المحلية بالرياض. نساعد أصحاب المشاريع الصغيرة يوفروا وقتهم ويكبروا حضورهم الرقمي من غير تعقيد تقني — بخبرة عملية في أدوات الأتمتة الحديثة.
+    </p>
+  </section>
+
+  <!-- Case Study Placeholder -->
+  <section style="padding:60px 20px; text-align:center; max-width:700px; margin:0 auto;">
+    <h2>قصص نجاح</h2>
+    <p style="color:#666;">قريبًا: قصة نجاح عميلنا الأول في تحويل الاستفسارات إلى مواعيد فعلية عبر الأتمتة الكاملة.</p>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" style="padding:60px 20px; text-align:center; background:#1e3a8a; color:white;">
+    <h2>جاهز تبدأ؟</h2>
+    <p style="margin-bottom:20px;">تواصل معنا الآن عبر واتساب</p>
+    <a href={`https://wa.me/${whatsappNumber}`} style="background:#25D366; color:white; padding:12px 30px; border-radius:8px; text-decoration:none; font-weight:bold;">راسلنا على واتساب</a>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#111827; color:#9ca3af; padding:40px 20px; text-align:center; font-size:0.9rem;">
+    <p style="color:white; font-weight:bold; margin-bottom:10px;">كافِنتر</p>
+    <p>الرياض، المملكة العربية السعودية</p>
+    <p style="margin:15px 0;">
+      <a href={`https://wa.me/${whatsappNumber}`} style="color:#25D366; text-decoration:none; margin:0 10px;">واتساب</a>
+      <a href="/blog" style="color:#9ca3af; text-decoration:none; margin:0 10px;">المدونة</a>
+    </p>
+    <p style="margin-top:20px; font-size:0.8rem;">© 2026 كافِنتر. جميع الحقوق محفوظة.</p>
   </footer>
+
 </body>
 </html>
